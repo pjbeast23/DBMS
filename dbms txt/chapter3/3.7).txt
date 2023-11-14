@@ -1,0 +1,25 @@
+To demonstrate lossless decomposition using natural join, let's consider a hypothetical scenario where we have two tables: Customer Information and Customer Orders. We'll apply a natural join to show that the decomposition does not lose information.
+
+Assuming the following tables:
+
+Customer Information:
+
+Attributes: CustomerID, FirstName, LastName, Email
+Primary Key: CustomerID
+Customer Orders:
+
+Attributes: CustomerID, ProductCode, OrderDate, Quantity
+Primary Key: Combination of CustomerID, ProductCode, and OrderDate
+Now, let's apply a natural join on the common attribute CustomerID
+
+SQL query->
+SELECT *
+FROM "Customer Information"
+NATURAL JOIN "Customer Orders";
+This query will join the two tables based on the common attribute CustomerID. The result will include all attributes from both tables where the CustomerID values match. The purpose of this demonstration is to show that the join of the decomposed tables results in the original table.
+
+The query results will include attributes from both tables, such as CustomerID, FirstName, LastName, Email, ProductCode, OrderDate, and Quantity. The decomposition is lossless because you can reconstruct the original table by projecting on the common attributes (CustomerID in this case).
+
+If you have more tables in your database schema, you can apply similar natural joins to demonstrate lossless decomposition for each pair of related tables. The key is to use common attributes as the join criteria.
+
+Remember that the success of a lossless join demonstration also depends on how well the original tables were normalized and how the decomposition was performed. If normalization rules are followed, and the decomposition is done correctly, lossless decomposition can be proven using natural joins.
