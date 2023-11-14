@@ -1,0 +1,37 @@
+Normalisation
+Customer:
+1NF: The table has a primary key (cust_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (name, street, town, pin_code) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Sale:
+1NF: The table has a primary key (sale_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (date, cust_id) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Item:
+1NF: The table has a primary key (item_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (name, stock, price, category) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Supplier:
+1NF: The table has a primary key (supp_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (name) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Purchase:
+1NF: The table has a primary key (pur_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (date, supp_id) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+SaleItem:
+1NF: The table has a primary key (sale_id, item_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (quantity, sale_price, amount) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+PurchItem:
+1NF: The table has a primary key (item_id, pur_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: All non-key attributes (quantity, purch_price, amount) are fully functionally dependent on the primary key. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Customer_phone:
+1NF: The table has a primary key (phone, cust_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: There are no non-key attributes. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
+Supplier_phone:
+1NF: The table has a primary key (phone, supp_id), and each cell contains only one value. So, it’s in 1NF.
+2NF: There are no non-key attributes. So, it’s in 2NF.
+3NF: There are no transitive dependencies. So, it’s in 3NF.
