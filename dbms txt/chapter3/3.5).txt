@@ -1,0 +1,48 @@
+Employee Information:
+
+Primary Key: EmployeeID
+Product Information:
+
+Primary Key: ProductCode
+Customer Information:
+
+Primary Key: CustomerID
+Purchase Information:
+
+Primary Key: TransactionID
+Foreign Key: ProductCode references Product Information(ProductCode)
+Foreign Key: CustomerID references Customer Information(CustomerID)
+Supplier Information:
+
+Primary Key: SupplierID
+Order Information:
+
+Primary Key: OrderID
+Foreign Key: CustomerID references Customer Information(CustomerID)
+Inventory Information:
+
+Primary Key: Combination of ProductCode and WarehouseID
+Foreign Key: ProductCode references Product Information(ProductCode)
+Employee Schedule:
+
+Primary Key: Combination of EmployeeID and Date
+Supplier Catalog:
+
+Primary Key: Combination of SupplierID and ProductCode
+Foreign Key: ProductCode references Product Information(ProductCode)
+Customer Orders:
+
+Primary Key: Combination of CustomerID, ProductCode, and OrderDate
+Foreign Key: CustomerID references Customer Information(CustomerID)
+Foreign Key: ProductCode references Product Information(ProductCode)
+These relationships establish links between tables using primary keys and foreign keys, ensuring data integrity and consistency across the database. The relationships are as follows:
+
+In the Purchase Information table, the ProductCode and CustomerID columns are foreign keys that reference the primary keys in the Product Information and Customer Information tables, respectively.
+
+In the Order Information table, the CustomerID column is a foreign key that references the primary key in the Customer Information table.
+
+In the Inventory Information table, the ProductCode column is a foreign key that references the primary key in the Product Information table.
+
+In the Supplier Catalog table, the ProductCode column is a foreign key that references the primary key in the Product Information table.
+
+In the Customer Orders table, the CustomerID and ProductCode columns are foreign keys that reference the primary keys in the Customer Information and Product Information tables, respectively.

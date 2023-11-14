@@ -1,0 +1,22 @@
+Primary keys are unique identifiers for records in a database table. They serve as a means to uniquely identify each record, ensuring that no two records in the table have the same primary key. Below are suggested primary keys for the scenarios mentioned earlier:
+
+Employee Information:
+Primary Key: EmployeeID
+Product Information:
+Primary Key: ProductCode
+Customer Information:
+Primary Key: CustomerID
+Purchase Information:
+Primary Key: TransactionID
+Supplier Information:
+Primary Key: SupplierID
+Order Information:
+Primary Key: OrderID
+Inventory Information:
+Primary Key: Combination of ProductCode and WarehouseID
+Employee Schedule:
+Primary Key: Combination of EmployeeID and Date
+Supplier Catalog:
+Primary Key: Combination of SupplierID and ProductCode
+Customer Orders:
+Primary Key: Combination of CustomerID, ProductCode, and OrderDate

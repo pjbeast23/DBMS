@@ -1,0 +1,42 @@
+Functional dependencies describe the relationships between attributes in a relational database. Given a set of attributes in a relation, a functional dependency specifies that the values of certain attributes uniquely determine the values of other attributes. Here are some examples of functional dependencies:
+
+Employee Information:
+
+{EmployeeID} -> {FirstName, LastName, Position}
+The EmployeeID uniquely determines the associated first name, last name, and position of an employee.
+Product Information:
+
+{ProductCode} -> {ProductName, UnitPrice}
+The ProductCode uniquely determines the associated product name and unit price.
+Customer Information:
+
+{CustomerID} -> {FirstName, LastName, Email}
+The CustomerID uniquely determines the associated first name, last name, and email of a customer.
+Purchase Information:
+
+{TransactionID} -> {ProductCode, Quantity, TotalPrice}
+The TransactionID uniquely determines the associated product code, quantity, and total price of a purchase.
+Supplier Information:
+
+{SupplierID} -> {SupplierName, ContactPerson, Phone}
+The SupplierID uniquely determines the associated supplier name, contact person, and phone number.
+Order Information:
+
+{OrderID} -> {CustomerID, OrderDate, TotalAmount}
+The OrderID uniquely determines the associated customer ID, order date, and total amount.
+Inventory Information:
+
+{ProductCode, WarehouseID} -> {StockQuantity}
+The combination of ProductCode and WarehouseID uniquely determines the stock quantity in the inventory.
+Employee Schedule:
+
+{EmployeeID, Date} -> {ShiftStartTime, ShiftEndTime}
+The combination of EmployeeID and Date uniquely determines the scheduled shift start and end times.
+Supplier Catalog:
+
+{SupplierID, ProductCode} -> {CatalogPrice}
+The combination of SupplierID and ProductCode uniquely determines the catalog price for a product from a specific supplier.
+Customer Orders:
+
+{CustomerID, ProductCode} -> {OrderDate, Quantity}
+The combination of CustomerID and ProductCode uniquely determines the order date and quantity of a specific product by a customer.

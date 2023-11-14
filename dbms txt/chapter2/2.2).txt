@@ -1,0 +1,20 @@
+Visual Studio Code:
+
+An integrated development environment (IDE) for coding, debugging, and version control.
+Extensions for MySQL support, such as "MySQL" or "MySQL Language Support."
+MySQL Server:
+
+MySQL Community Edition or MySQL Enterprise for database management.
+MySQL Workbench:
+
+A visual tool for database design, modeling, and SQL development.
+SQLTools Extension for VS Code:
+
+An extension that provides additional features for working with SQL databases in VS Code.
+Git:
+
+Version control system for tracking changes in your codebase.
+Integrated with VS Code for source code management.
+MySQL Command-Line Tool:
+
+For executing MySQL queries and scripts directly from the command line.
